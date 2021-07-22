@@ -16,6 +16,26 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* ≥ 576px */
+@media screen and (min-width: 576px) {
+    .wrapper {
+        padding: 0 1.5rem;
+    }
+    
+}
+/* typo */
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+h6 {
+    color: var(--blue_300);
+}
+
+.subtitle {
+    color: var(--grey_300);
+}
 /* button */
 button {
     border-width: 0;
@@ -110,6 +130,15 @@ header {
 main {
     padding-top: 110px;
 }
+
+section {
+    margin-bottom: 70px;
+}
+.col__img img {
+    width: 100%;
+}
+
+
 /* hero */
 #hero {
     background-image: url(../img/jumbo-bg.png);
@@ -118,7 +147,7 @@ main {
     color: #fff;
 }
 
-.hero__wrapper {
+.hero-top-wrapper {
     padding: 250px 0 50px;
 }
 .hero-top__img {
@@ -128,12 +157,19 @@ main {
     width: 100%;
 }
 
-.hero-bottom {
+#hero h2 {
+    margin: 2rem 0;
+}
+#hero p {
+    margin: 1.5rem 0;
+}
+
+.hero-bottom-wrapper {
     background-color: #fff;
     padding: 1.5rem 0;
 }
 
-.hero-bottom button {
+.hero-bottom-wrapper button {
     padding: 0;
 }
 
@@ -144,16 +180,22 @@ main {
 }
 
 /* console */
+.products button:not(button.selected) {
+    opacity: 0.5;
+}
+
+.products button.selected {
+    border-bottom: 2px solid var(--blue_300);
+}
 
 /* ≥ 576px */
 @media screen and (min-width: 576px) {
     /* hero */
-    .hero__wrapper {
+    .hero-top-wrapper {
         padding: 250px 1.5rem 50px;
     }
 
-    .hero-bottom {
-        background-color: #fff;
+    .hero-bottom-wrapper {
         padding: 1.5rem;
     }
     
