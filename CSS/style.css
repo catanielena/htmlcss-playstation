@@ -180,12 +180,20 @@ section {
 }
 
 /* console */
+.products {
+    padding: .75rem;
+}
+
 .products button:not(button.selected) {
     opacity: 0.5;
 }
 
-.products button.selected {
+.products > .selected {
     border-bottom: 2px solid var(--blue_300);
+}
+
+.products .col__img {
+    margin: 1rem 0;
 }
 
 /* ≥ 576px */
@@ -197,6 +205,19 @@ section {
 
     .hero-bottom-wrapper {
         padding: 1.5rem;
+    }
+    
+}
+
+/* ≥ 992px */
+@media screen and (min-width: 992px) {
+    /* console */
+    .products {
+        padding: 0;
+    }
+
+    .products img {
+        width: 50%;
     }
     
 }
