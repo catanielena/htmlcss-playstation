@@ -1,0 +1,22 @@
+/* common */
+:root {
+    --grey: #1f1f1f;
+    --grey_500: #363636;
+    --grey_300: #797979;
+    --grey_100: #999999;
+    --red: #cd3d0f;
+    --blue: #161c3b;
+    --blue_800: #00439c;
+    --blue_700: #2d64e6;
+    --blue_500: #3066e6;
+    --blue_300: #0072ce;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* button */
+/* header */
+/* main */
+/* footer */
