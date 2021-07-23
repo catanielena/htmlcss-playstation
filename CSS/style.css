@@ -70,6 +70,11 @@ button {
     color: var(--blue_500);
 }
 
+.btn--wth {
+    background-color: #fff;
+    color: #000;
+}
+
 .active--blue {
     border: 4px solid transparent;
     box-shadow: 0 0 0 2px var(--blue_300);
@@ -80,6 +85,7 @@ header {
     position: fixed;
     width: 100%; 
     background-color: #fff;
+    z-index: 10;
 }
 
 .header-top {
@@ -181,6 +187,20 @@ section {
 .section-wht__content {
     padding: 3rem 0;
 }
+
+
+.banner__left {
+    padding: 50px 0;
+}
+
+.banner__right {
+    position: relative;
+}
+
+.banner p {
+    margin: 1.5rem 0;
+}
+
 /* hero */
 #hero {
     background-image: url(../img/jumbo-bg.png);
@@ -251,17 +271,12 @@ section {
     background-color: #bebcbb;
 }
 
-#ps-plus .col__right {
-    position: relative;
+/* ps-now */
+#ps-now {
+    background-color: #161c3b;
+    color: #fff;
 }
 
-#ps-plus .col__left {
-    padding: 50px 0;
-}
-
-#ps-plus p {
-    margin: 1.5rem 0;
-}
 
 @media screen and (min-width: 576px) {
     section:not(#hero, #new-releases) {
@@ -279,24 +294,20 @@ section {
     .section-bottom__wrapper {
         padding: 1.5rem;
     }
-
-    #ps-plus .col__right img {
-        object-fit: contain;
-        object-position: right;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-    }
 }
 
 @media screen and (min-width: 768px) {
-    #ps-plus .col__left {
+    .banner__right img {
+        width: 100%;
+    }
+
+    .banner__left {
         padding: 15px 0;
     }  
 }
 
 @media screen and (min-width: 992px) {
-    #ps-plus .col__left {
+    .banner__left {
         padding: 95px 0;
     }  
 }
