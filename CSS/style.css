@@ -176,6 +176,10 @@ section {
 .section-bottom__img p {
     margin-top: 1rem;
 }
+
+.section-wht__content {
+    padding: 3rem 0;
+}
 /* hero */
 #hero {
     background-image: url(../img/jumbo-bg.png);
@@ -205,9 +209,6 @@ section {
 
 
 /* console */
-.console__center {
-    padding: 3rem 0;
-}
 .products {
     padding: .75rem;
 }
@@ -239,6 +240,9 @@ section {
     background-color: var(--grey);
 }
 
-
+/* explore */
+.section-wht__content > div {
+    margin: 1rem 0;
+}
 /* /main */
 /* footer */
