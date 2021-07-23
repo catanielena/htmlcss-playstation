@@ -16,12 +16,8 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* ≥ 576px */
-@media screen and (min-width: 576px) {
-    .wrapper {
-        padding: 0 1.5rem;
-    }
-    
+.container-xxl {
+    padding: 0 1.5rem;
 }
 /* typo */
 h2 {
@@ -36,6 +32,7 @@ h6 {
 .subtitle {
     color: var(--grey_300);
 }
+
 /* button */
 button {
     border-width: 0;
@@ -71,21 +68,25 @@ button {
 /* header */
 header {
     position: fixed;
-    width: 100%;
-    background-color: white;    
+    width: 100%; 
+    background-color: #fff;
 }
 
 .header-top {
     background-color: #000;
-    padding: 10px;
+    padding: 10px 1.5rem;
 }
 
+.hero-bottom-wrapper {
+    background-color: #fff;
+
+}
 .header-top__logo {
     text-align: right;
 }
 
 .header-top__logo img{
-    width: 80px;
+    height: 15px;
 }
 
 .navbar .container-fluid{
@@ -110,20 +111,22 @@ header {
 .nav-link {
     position: relative;
 }
-.nav-link::after {
-    content: "\f107";
-    display: block;
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    position: absolute;
-    top: 0;
-    right: 0;
-    color: var(--grey_100);
 
+.dropdown-toggle::after {
+    border: none;
+    content: url(../img/chevron-down-solid.svg);
+    display: inline-block;
+    width: 10px;
+    vertical-align: middle;
 }
 
-.nav__left li:first-child {
-    margin-right: 20px;
+.navbar .accedi {
+    margin: 0 10px;
+}
+
+
+.btn__icon {
+    height: 25px;
 }
 
 /* main */
@@ -164,8 +167,11 @@ section {
     margin: 1.5rem 0;
 }
 
-.hero-bottom-wrapper {
+#hero > .container-fluid {  
     background-color: #fff;
+}
+
+.hero-bottom-wrapper {
     padding: 1.5rem 0;
 }
 
@@ -180,6 +186,9 @@ section {
 }
 
 /* console */
+.console__center {
+    padding: 3rem 0;
+}
 .products {
     padding: .75rem;
 }
@@ -198,15 +207,9 @@ section {
 
 /* ≥ 576px */
 @media screen and (min-width: 576px) {
-    /* hero */
-    .hero-top-wrapper {
-        padding: 250px 1.5rem 50px;
+    section > div {
+        padding: 0 1.5rem;
     }
-
-    .hero-bottom-wrapper {
-        padding: 1.5rem;
-    }
-    
 }
 
 /* ≥ 992px */
