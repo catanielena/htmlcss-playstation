@@ -16,14 +16,18 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-section:not(#hero) {
+section:not(#hero, #new-releases) {
     padding: 0 1.5rem;
 }
 
 /* typo */
 h2 {
     font-size: 2.5rem;
-    margin-bottom: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+h3 {
+    font-size: 1.8rem;
 }
 
 h6 {
@@ -34,14 +38,18 @@ h6 {
     color: var(--grey_300);
 }
 
+.inner-subtitle {
+    font-size: 1.4rem;
+}
 /* button */
 button {
     border-width: 0;
     background-color: transparent;
+    border-radius: 1.5rem;
 }
 
 .btn {
-    border-radius: 50px;
+    border-radius: 1.5rem;
     color: #fff;
 }
 
@@ -145,10 +153,29 @@ section {
     width: 100%;
 }
 
-.section__top-wrapper {
-    padding: 250px 1.5rem 50px;
+.section-top__wrapper img {
+    width: 50%;
 }
 
+.section-bottom__wrapper {
+    padding: 1.5rem;
+}
+
+.section-bottom__img {
+    overflow: hidden;
+    padding: 0;
+    margin: .75rem 0;
+    text-align: left;
+    color: #fff;
+}
+
+.section-bottom__img img{
+    border-radius: 1.5rem;
+}
+
+.section-bottom__img p {
+    margin-top: 1rem;
+}
 /* hero */
 #hero {
     background-image: url(../img/jumbo-bg.png);
@@ -157,10 +184,7 @@ section {
     color: #fff;
 }
 
-.hero-top__img {
-    width: 60%;
-}
-#hero img {
+.section-bottom__img img {
     width: 100%;
 }
 
@@ -171,20 +195,14 @@ section {
     margin: 1.5rem 0;
 }
 
-.hero-bottom {  
+#hero .section-bottom {  
     background-color: #fff;
 }
 
-.hero-bottom__wrapper {
-    padding: 1.5rem;
+#hero .section-top__wrapper {
+    padding: 250px 1.5rem 50px;
 }
 
-.hero-bottom__img {
-    border-radius: 1rem;
-    overflow: hidden;
-    padding: 0;
-    margin: .75rem 0;
-}
 
 /* console */
 .console__center {
@@ -206,18 +224,21 @@ section {
     margin: 1rem 0;
 }
 
-
-/* ≥ 992px */
-@media screen and (min-width: 992px) {
-    /* console */
-    .products {
-        padding: 0;
-    }
-
-    .products img {
-        width: 50%;
-    }
-    
+/* new-releases */
+#new-releases {
+    background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    color: #fff;
 }
+#new-releases .section-top__wrapper {
+    padding: 50px 1.5rem;
+}
+
+#new-releases .section-bottom{
+    background-color: var(--grey);
+}
+
+
 /* /main */
 /* footer */
