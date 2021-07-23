@@ -16,9 +16,10 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.container-xxl {
+section:not(#hero) {
     padding: 0 1.5rem;
 }
+
 /* typo */
 h2 {
     font-size: 2.5rem;
@@ -93,6 +94,9 @@ header {
     padding: auto 0;
 }
 
+.navbar-toggler {
+    margin-right: .75rem;
+}
 .navbar-light .navbar-nav .nav-link {
     color: #000;
 }
@@ -141,6 +145,9 @@ section {
     width: 100%;
 }
 
+.section__top-wrapper {
+    padding: 250px 1.5rem 50px;
+}
 
 /* hero */
 #hero {
@@ -150,9 +157,6 @@ section {
     color: #fff;
 }
 
-.hero-top-wrapper {
-    padding: 250px 0 50px;
-}
 .hero-top__img {
     width: 60%;
 }
@@ -167,21 +171,18 @@ section {
     margin: 1.5rem 0;
 }
 
-#hero > .container-fluid {  
+.hero-bottom {  
     background-color: #fff;
 }
 
-.hero-bottom-wrapper {
-    padding: 1.5rem 0;
-}
-
-.hero-bottom-wrapper button {
-    padding: 0;
+.hero-bottom__wrapper {
+    padding: 1.5rem;
 }
 
 .hero-bottom__img {
     border-radius: 1rem;
     overflow: hidden;
+    padding: 0;
     margin: .75rem 0;
 }
 
@@ -205,12 +206,6 @@ section {
     margin: 1rem 0;
 }
 
-/* ≥ 576px */
-@media screen and (min-width: 576px) {
-    section > div {
-        padding: 0 1.5rem;
-    }
-}
 
 /* ≥ 992px */
 @media screen and (min-width: 992px) {
