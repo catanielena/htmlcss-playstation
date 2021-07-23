@@ -16,6 +16,10 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+ul {
+    list-style: none;
+}
+
 /* typo */
 h2 {
     font-size: 2.5rem;
@@ -42,6 +46,14 @@ button {
     border-width: 0;
     background-color: transparent;
     border-radius: 1.5rem;
+}
+
+a:not(.underline){
+    text-decoration: none;
+}
+
+a {
+    color: #fff;
 }
 
 .btn {
@@ -300,16 +312,49 @@ section {
     .banner__right img {
         width: 100%;
     }
-
-    .banner__left {
-        padding: 15px 0;
-    }  
 }
 
-@media screen and (min-width: 992px) {
-    .banner__left {
-        padding: 95px 0;
-    }  
-}
 /* /main */
+
 /* footer */
+footer {
+    background-color: #00439c;
+    color: #fff;
+    padding: 70px 0;
+}
+
+.col__img-ps {
+    width: 100px;
+}
+
+.col__img-globe {
+    width: 25px;
+    display: inline-block;
+}
+
+.col__img-sie {
+    width: 130px;
+    margin-bottom: 15px;
+}
+
+footer .col-left__bt {
+    margin: 40px 0;
+}
+
+footer li {
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width: 576px) {
+    footer {
+        padding: 70px 1.5rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .col-sie {
+        margin-top: 40px;
+    }
+
+    
+}
