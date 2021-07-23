@@ -265,12 +265,19 @@ section {
 
 @media screen and (min-width: 576px) {
     section:not(#hero, #new-releases) {
-        padding: auto 1.5rem;
-    }    
-    #hero .section-top__wrapper,
-    #new-releases .section-top__wrapper,
+        padding: 0 1.5rem;
+    }   
+    
+    #hero .section-top__wrapper {
+        padding: 250px 1.5rem 50px;
+    }
+
+    #new-releases .section-top__wrapper {
+        padding: 50px 1.5rem;
+    }
+
     .section-bottom__wrapper {
-        padding: auto 1.5rem;
+        padding: 1.5rem;
     }
 
     #ps-plus .col__right img {
