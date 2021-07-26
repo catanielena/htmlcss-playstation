@@ -34,6 +34,9 @@ h6 {
     color: var(--blue_300);
 }
 
+p {
+    font-size: 1rem;
+}
 .subtitle {
     color: var(--grey_300);
 }
@@ -60,7 +63,9 @@ a {
 .btn {
     border-radius: 1.5rem;
     color: #fff;
+    border-width: 2px;
 }
+
 
 .btn--blue {
     background-color: var(--blue_700);
@@ -88,24 +93,29 @@ a {
     box-shadow: inset 0 0 0 2px var(--blue_300);
 }
 
-.btn--grey:hover {
+li a:hover {
+    color: rgba(255, 255, 255, .7);
+}
+
+.btn:hover {
     color: #fff;
-    box-shadow: inset 0 0 0 1px var(--grey_300), inset 0 0 0 2.5px #fff;
-    border: 1px solid var(--grey_300);
+}
+
+.btn--grey:hover {
+    box-shadow: inset 0 0 0 2px #fff;
+    border: 2px solid var(--grey_300);
     background-color: var(--grey_300);
 }
 
 .btn--blue:hover {
-    color: #fff;
-    box-shadow: inset 0 0 0 1px  var(--blue_700), inset 0 0 0 2.5px #fff;
-    border: 1px solid  var(--blue_700);
+    box-shadow: inset 0 0 0 2px #fff;
+    border: 2px solid  var(--blue_700);
     background-color:  var(--blue_700);
 }
 
 .btn--red:hover {
-    color: #fff;
-    box-shadow: inset 0 0 0 1px var(--red), inset 0 0 0 2.5px #000;
-    border: 1px solid var(--red);
+    box-shadow: inset 0 0 0 2px #000;
+    border: 2px solid var(--red);
     background-color: var(--red);
 }
 
@@ -115,8 +125,9 @@ a {
 }
 
 .btn--wth:hover {
-    box-shadow: inset 0 0 0 1px #fff, inset 0 0 0 2.5px #161c3b;
-    border: 1px solid #fff;
+    box-shadow: inset 0 0 0 2px #161c3b;
+    border: 2px solid #fff;
+    color: #000;
     background-color: #fff;
 }
 
@@ -183,7 +194,8 @@ header {
     color: var(--blue_300);
 }    
 
-.dropdown-toggle:hover.dropdown-toggle::after {
+.dropdown-toggle:hover.dropdown-toggle::after,
+.dropdown-toggle.show.dropdown-toggle::after {
     content: url(../img/chevron-down-solid-hover.svg);
 }
 
@@ -279,7 +291,7 @@ section {
 }
 
 #hero .section-bottom__img:hover.section-bottom__img:not(.active--blue) {
-    transform: translate(0, -15px);
+    transform: translateY(-15px);
 }
 
 /* console */
@@ -287,12 +299,16 @@ section {
     padding: .75rem;
 }
 
-.products button:not(button.selected) {
+.products a, .products a:hover {
+    color: #000;
+}
+
+.products a:not(a.selected) {
     opacity: 0.5;
     transition: opacity .4s ease-in-out;
 }
 
-.products button:hover:not(button.selected) {
+.products a:hover:not(a.selected) {
     opacity: 1;
 }
 
@@ -306,13 +322,13 @@ section {
 
 /* new-releases */
 #new-releases {
-    background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
-    background-position: top;
-    background-repeat: no-repeat;
     color: #fff;
 }
 #new-releases .section-top__wrapper {
     padding: 50px 0;
+    background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
+    background-position: top;
+    background-size: cover;
 }
 
 #new-releases .section-bottom{
@@ -337,27 +353,43 @@ section {
 
 
 @media screen and (min-width: 576px) {
+    /* main */
     section:not(#hero, #new-releases) {
         padding: 0 1.5rem;
     }   
     
+    .banner {
+        padding: 0 2rem;
+    }
+    
+    .section-bottom__wrapper {
+        padding: 1.5rem;
+    }
+
+    /* hero */
     #hero .section-top__wrapper {
         padding: 250px 1.5rem 50px;
     }
 
+    /* new-releases */
     #new-releases .section-top__wrapper {
         padding: 50px 1.5rem;
-    }
-
-    .section-bottom__wrapper {
-        padding: 1.5rem;
     }
 }
 
 @media screen and (min-width: 768px) {
+    /* banner (ps-plus/ps-now) */
     .banner__right img {
         width: 100%;
     }
+}
+
+@media screen and (min-width: 992px) {
+    /* console */
+    .products .col__img {
+        width: 60%;
+        margin: 1rem auto;
+    }  
 }
 
 /* /main */
