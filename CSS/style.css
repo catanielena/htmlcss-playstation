@@ -258,6 +258,17 @@ header {
     height: 25px;
 }
 
+
+.dropdown-item:focus, .dropdown-item{ 
+    transition: opacity .4s ease-in-out;
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+    background-color: rgba(255, 255, 255, 0);
+    opacity: .7;
+}
+
+
 @media screen and (min-width: 992px) {
     .navbar-expand-lg .navbar-nav .nav-link {
     padding: 0 10px;
