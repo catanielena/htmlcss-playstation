@@ -273,6 +273,22 @@ header {
     opacity: .7;
 }
 
+.dropdown-item__img {
+    margin: 1rem;
+    padding: 0;
+    width: 100px;
+}
+
+.dropdown-item__img:hover{
+    box-shadow: 0 0 .2em .2rem rgba(0, 0, 0, .08);  
+    border-radius: .3rem;
+    opacity: 1;
+}
+.dropdown-item__img img {
+    width: 100%;
+    border-radius: .3rem;
+
+}
 
 @media screen and (min-width: 992px) {
     .navbar-expand-lg .navbar-nav .nav-link {
